@@ -38,6 +38,10 @@ const DeleteButton = styled.div`
 const Header = styled.h1`
     letter-spacing: 2px;
     font-size: 2.5rem;
+
+    @media (max-width: 768px){
+        font-size: 1.5rem;
+    }
 `;
 
 const Error = styled.span`
@@ -74,14 +78,11 @@ const CheckBox = styled.input.attrs({ type: 'checkbox' })`
     }
 
     &:checked{
-        cursor: default;
-    }
-
-    &:checked{
         position: absolute;
         background-color: gold;
         color: gold;
         border-color: black;
+        cursor: default;
 
         &:after{
             font-size: 25px;
@@ -93,6 +94,24 @@ const CheckBox = styled.input.attrs({ type: 'checkbox' })`
             color: black;
             }
         }
+    }
+
+    @media (max-width: 768px){
+        width: 12%;
+        padding: .6rem .8rem;
+
+        &:checked{
+    
+            &:after{
+                font-size: 20px;
+                top: 0;
+                left: 0;
+                transform: translate(35%, -10%);
+                content: '✔';                
+                position: absolute;
+                color: black;
+                }
+            }
     }
 `;
 
@@ -117,6 +136,12 @@ const Input = styled.input`
     ::placeholder{
         color:black;
     }
+
+    @media (max-width: 768px){
+        font-size: 1rem;
+        width: 85.5%;
+        padding: .6rem .8rem;
+    }
 `;
 
 const Button = styled.button`
@@ -135,6 +160,12 @@ const Button = styled.button`
         color: black;
         background: gold;
         border: black solid 2px;
+    }
+
+    @media (max-width: 768px){
+        height: 42px;
+        font-size: .8rem;
+        padding: .4rem .6rem;
     }
 `;
 
@@ -170,6 +201,14 @@ const InputWrapper = styled(Wrapper)`
     padding: 1rem;
     margin: 1rem auto;
     border: none;
+
+    @media (max-width: 768px){
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin: .5rem 0;
+        padding: .5rem;
+    }
 `;
 
 const UnorderedList = styled.ul`
