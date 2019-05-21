@@ -1,8 +1,13 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# todoapp
+Todolist application written with React, CSS done with styled-components.
 
-In the project directory, you can run:
+Bread and butter for most of frontend developers at beggining of their road.
+React allowed the code to be concise, styled-components was used for the sole purpose of trying it out and playing around with.
+Additionally, I've added the possibility to save all tasks with the help of browser's local storage.
+
+You can check it live out by clicking the link to gh-pages, or following the instructions down below.
 
 ### `npm start`
 
